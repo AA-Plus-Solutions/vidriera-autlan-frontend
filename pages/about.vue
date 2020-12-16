@@ -1,15 +1,16 @@
 <template>
     <h1>
-        vidriera autlan
+        about page
     </h1>
 </template>
+
 
 <script>
 export default {
     head(){
         //aqui esta la metainfo
         return{
-            title:'Vidriera Autlan | Home',
+            title:'Vidriera Autlan | About',
             meta:[
                 {
                     hid:"description",
