@@ -26,7 +26,7 @@
       </section>
     </v-container>
 
-    <section id="conocenos" :style="imageStyle">
+    <section id="conocenos" :style="imageStyle" eager>
       <div class="overlay"></div>
       <v-container>
         <v-row class="d-flex justify-center"
