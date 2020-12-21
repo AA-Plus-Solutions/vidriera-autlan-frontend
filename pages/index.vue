@@ -1,5 +1,16 @@
 <template>
   <div>
+    <section id="welcome-carousel">
+      <v-carousel>
+        <v-carousel-item
+          v-for="(item, i) in items"
+          :key="i"
+          :src="item.src"
+          reverse-transition="fade-transition"
+          transition="fade-transition"
+        ></v-carousel-item>
+      </v-carousel>
+    </section>
     <v-container>
       <section id="bienvenidos">
         <v-row>
@@ -72,6 +83,9 @@
 
 <script>
 import panImg from "static/pan1.jpg";
+import panImg2 from "static/pan1.jpg";
+import panImg3 from "static/pan2.jpg";
+import panImg4 from "static/pan3.jpg";
 
 export default {
   data: () => {
@@ -81,6 +95,23 @@ export default {
         // background: `transparent url(${panImg}) no-repeat fixed center;`,
         background: `url(${panImg}) center center/cover no-repeat fixed transparent;`,
       },
+      items: [
+        // {
+        //   src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+        // },
+        // {
+        //   src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+        // },
+        // {
+        //   src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+        // },
+        // {
+        //   src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
+        // },
+        { src: panImg2 },
+        { src: panImg3 },
+        { src: panImg4 },
+      ],
     };
   },
   head() {
