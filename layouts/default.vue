@@ -1,33 +1,30 @@
 <template>
-  <div>
-    <Navigation/>
+  <v-app>
+    <Navigation />
     <div class="content">
       <Nuxt />
     </div>
-    <Footer/>
-  </div>
+    <Footer />
+    <Footer2 />
+  </v-app>
 </template>
 <script>
-import Navigation from "../components/Navigation"
-import Footer from "../components/Footer"
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
+import Footer2 from "../components/Footer2";
+
 export default {
-  components:{
+  components: {
     Navigation,
-    Footer
-  }
-}
+    Footer,
+    Footer2,
+  },
+};
 </script>
 <style>
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
