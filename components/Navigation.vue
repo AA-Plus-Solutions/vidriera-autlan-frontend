@@ -70,7 +70,8 @@ header .container {
   text-decoration: none;
   text-transform: uppercase;
 }
-.header a:hover {
+.header a:hover,
+.header a.nuxt-link-exact-active {
   /* background: #2c3e50; */
   border-bottom: 1px solid rgb(32, 71, 122);
   color: rgb(32, 71, 122);

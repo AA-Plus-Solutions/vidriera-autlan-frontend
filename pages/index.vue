@@ -1,8 +1,9 @@
 <template>
   <div>
     <Carousel />
-    <v-container>
-      <section id="bienvenidos">
+
+    <section id="bienvenidos" v-scrollanimation>
+      <v-container>
         <v-row>
           <v-col>
             <h2>Bienvenido</h2>
@@ -23,12 +24,13 @@
           </v-col>
           <v-col> <nuxt-image src="/vidriera_autlan_foto.jpg" /> </v-col>
         </v-row>
-      </section>
-    </v-container>
+      </v-container>
+    </section>
 
     <section id="conocenos" :style="imageStyle">
       <div class="overlay"></div>
-      <v-container>
+
+      <v-container v-scrollanimation>
         <v-row class="d-flex justify-center"
           ><h2>Conócenos sin salir de casa</h2></v-row
         >
@@ -49,7 +51,7 @@
     </section>
 
     <v-container>
-      <section id="dudas">
+      <section id="dudas" v-scrollanimation>
         <v-row>
           <v-col cols="12" lg="8">
             <h2>Tienes una duda</h2>
@@ -139,5 +141,31 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.before-enter {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.enter {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 </style>

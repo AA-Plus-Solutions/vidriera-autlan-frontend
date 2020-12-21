@@ -1,4 +1,7 @@
 export default {
+  publicRuntimeConfig: {
+    GOOGLE_MAPS_API_KEY: 'AIzaSyAfPkflOKXzxU1Aa33mDp_Bw3AnFoLwhV4'
+  },
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
