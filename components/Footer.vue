@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col cols="6">
-          <p>Datos de contacto</p>
+          <p class="title">Datos de contacto</p>
 
           <p>
             <v-icon color="white">mdi-map-marker</v-icon> Calz. Castellón 2031,
@@ -51,6 +51,13 @@ export default {
 };
 </script>
 <style scoped>
+p.title {
+  /* text-decoration: underline; */
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+  width: 30%;
+}
+
 ul {
   list-style: none;
   padding-left: 0 !important;

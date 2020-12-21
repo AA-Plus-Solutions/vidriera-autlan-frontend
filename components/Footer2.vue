@@ -6,6 +6,7 @@
           <p>Vidriera Autlan |<b>AA+ Solutions</b></p>
           <!-- <h1>hello</h1> -->
         </v-col>
+
         <v-col>
           <div class="d-flex justify-end">
             <a href="http://www.facebook.com" target="_blank">
@@ -37,11 +38,12 @@ v-icon {
 v-icon {
   margin-left: 10px;
 }
-bold {
+b {
   font-weight: bold;
   margin-left: 10px;
 }
 a {
   text-decoration: none;
+  margin-left: 10px;
 }
 </style>

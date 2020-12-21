@@ -9,7 +9,6 @@
         <v-col cols="12" lg="5" offset-lg="2">
           <nuxt-image src="/vidriera_autlan_foto.jpg" />
           <iframe
-            width="100%"
             height="300"
             frameborder="0"
             style="border: 0"
@@ -57,7 +56,8 @@ export default {
 h1 {
   margin-bottom: 30px;
 }
-#map {
+#vidriera-map {
+  margin-top: 20px;
   width: 100%;
 }
 </style>
