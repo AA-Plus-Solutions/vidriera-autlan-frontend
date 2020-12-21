@@ -26,7 +26,7 @@
       </section>
     </v-container>
 
-    <section id="conocenos" :style="imageStyle" eager>
+    <section id="conocenos" :style="imageStyle">
       <div class="overlay"></div>
       <v-container>
         <v-row class="d-flex justify-center"
@@ -72,7 +72,7 @@
 </template>
 
 <script>
-import panImg from "static/pan1.jpg";
+import panImg from "~/assets/pan1.jpg";
 import Carousel from "../components/Carousel";
 export default {
   components: {
