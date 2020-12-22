@@ -36,11 +36,12 @@ export default {
   buildModules: ['@nuxtjs/dotenv'],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/axios', '@nuxt/image'
+  modules: ['@nuxtjs/axios',
+    '@nuxt/image'
   ],
-  // axios: {
-  //   proxy: true
-  // },
+  axios: {
+    proxy: true
+  },
   // proxy: {
   //   '/api/sendmail': '/.netlify/functions/sendmail',
   // },
