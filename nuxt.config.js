@@ -38,6 +38,12 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: ['@nuxtjs/axios', '@nuxt/image'
   ],
+  // axios: {
+  //   proxy: true
+  // },
+  // proxy: {
+  //   '/api/sendmail': '/.netlify/functions/sendmail',
+  // },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {

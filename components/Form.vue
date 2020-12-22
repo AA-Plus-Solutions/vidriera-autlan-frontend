@@ -38,6 +38,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data: () => {
     return {
@@ -64,12 +66,19 @@ export default {
     },
     async triggerSendMessageFunction(contact) {
       try {
-        const response = await this.$axios.$post("/api/sendmail", {
+        const sentInfo = {
           name: contact.nombre,
           email: contact.correo,
           message: contact.mensaje,
-          topic: contact.topic,
-        });
+          topic: contact.asunto,
+        };
+        // const response = await axios.post("/api/sendmail", sentInfo);
+        const response = await this.$axios.$post(
+          "/.netlify/functions/sendmail",
+          sentInfo
+        );
+
+        console.log(sentInfo);
         // this.resetForm();
         this.messages.push({ type: "success", text: response });
       } catch (error) {

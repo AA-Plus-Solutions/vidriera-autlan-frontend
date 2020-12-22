@@ -5,8 +5,8 @@
   publish = "dist/"
   command = "npm run generate"
 
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
+#[[redirects]]
+#  from = "/api/*"
+#  to = "/.netlify/functions/:splat"
 
 
