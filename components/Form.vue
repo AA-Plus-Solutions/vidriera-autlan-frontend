@@ -47,6 +47,7 @@ export default {
       email: "",
       topic: "",
       message: "",
+      messages: [],
     };
   },
   methods: {
@@ -55,8 +56,25 @@ export default {
       const obj = {
         nombre: this.firstname + " " + this.lastname,
         correo: this.email,
+        asunto: this.topic,
+        mensaje: this.message,
       };
       console.log(obj);
+      this.triggerSendMessageFunction(obj);
+    },
+    async triggerSendMessageFunction(contact) {
+      try {
+        const response = await this.$axios.$post("/api/sendmail", {
+          name: contact.nombre,
+          email: contact.correo,
+          message: contact.mensaje,
+          topic: contact.topic,
+        });
+        // this.resetForm();
+        this.messages.push({ type: "success", text: response });
+      } catch (error) {
+        this.messages.push({ type: "error", text: error.response.data });
+      }
     },
   },
 };

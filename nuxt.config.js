@@ -1,6 +1,6 @@
 export default {
   publicRuntimeConfig: {
-    GOOGLE_MAPS_API_KEY: 'AIzaSyAfPkflOKXzxU1Aa33mDp_Bw3AnFoLwhV4'
+    GOOGLE_MAPS_API_KEY: process.env.GOOGLE_MAPS_API_KEY
   },
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -33,8 +33,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [
-  ],
+  buildModules: ['@nuxtjs/dotenv'],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: ['@nuxtjs/axios', '@nuxt/image'

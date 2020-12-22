@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.4",
+    "@nuxtjs/dotenv": "^1.4.1",
     "core-js": "^3.6.5",
+    "nodemailer": "^6.4.17",
     "nuxt": "^2.14.6",
     "vuetify": "^2.0.0"
   },
