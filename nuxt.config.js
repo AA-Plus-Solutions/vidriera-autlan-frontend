@@ -37,7 +37,8 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: ['@nuxtjs/axios',
-    '@nuxt/image'
+    '@nuxt/image',
+    'vue-sweetalert2'
   ],
   axios: {
     proxy: true

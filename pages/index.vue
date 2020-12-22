@@ -168,6 +168,7 @@ export default {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
+
 .v-btn.custom-btn {
   background-color: rgb(32, 71, 122) !important;
 }
