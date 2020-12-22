@@ -18,8 +18,8 @@
               gama de productos de alta calidad y con ello superar sus
               expectativas.
             </p>
-            <v-btn color="success" class="mr-4" to="/about-us" nuxt>
-              Leer mas
+            <v-btn color="success" class="custom-btn mr-4" to="/about-us" nuxt>
+              Leer mas <span></span>
             </v-btn>
           </v-col>
           <v-col> <nuxt-image src="/vidriera_autlan_foto.jpg" /> </v-col>
@@ -43,8 +43,8 @@
           </p></v-row
         >
         <v-row class="d-flex justify-center">
-          <v-btn color="success" class="mr-4" to="/catalog" nuxt>
-            Ver Catalogo
+          <v-btn color="success" class="custom-btn mr-4" to="/catalog" nuxt>
+            Ver Catalogo<span></span>
           </v-btn>
         </v-row>
       </v-container>
@@ -63,8 +63,8 @@
             </p>
           </v-col>
           <v-col cols="12" lg="4" class="d-flex align-center justify-center">
-            <v-btn color="success" class="mr-4" to="/contact" nuxt>
-              Contactanos
+            <v-btn color="success" class="custom-btn mr-4" to="/contact" nuxt>
+              Contactanos<span></span>
             </v-btn>
           </v-col>
         </v-row>
@@ -167,5 +167,62 @@ export default {
 .enter {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+}
+.v-btn.custom-btn {
+  background-color: rgb(32, 71, 122) !important;
+}
+
+/* **********animations********** */
+@-webkit-keyframes animateNext {
+  25% {
+    right: -1.2em;
+  }
+  50% {
+    right: -0.7em;
+  }
+  75% {
+    right: -1em;
+  }
+  100% {
+    right: -0.7em;
+  }
+}
+
+@keyframes animateNext {
+  25% {
+    right: -1.2em;
+  }
+  50% {
+    right: -0.7em;
+  }
+  75% {
+    right: -1em;
+  }
+  100% {
+    right: -0.7em;
+  }
+}
+
+.v-btn span {
+  width: 30px;
+}
+
+.v-btn span::after {
+  content: "";
+  width: 1.2em;
+  height: 0.7em;
+  display: inline-block;
+  background-size: 1.15em;
+  background-position: right;
+  position: relative;
+  background-repeat: no-repeat;
+  top: 1px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='16'%3e%3cg fill='none' fill-rule='evenodd' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3e%3cpath d='M1.7797 8.0199h20.9252l-6.2016 6.2016'/%3e%3cpath d='M16.806 1.308l5.8236 6.5842-2.9118 3.0499'/%3e%3c/g%3e%3c/svg%3e");
+  right: -0.7em;
+}
+
+.v-btn:hover span::after {
+  -webkit-animation: animateNext 1s 1;
+  animation: animateNext 1s 1;
 }
 </style>

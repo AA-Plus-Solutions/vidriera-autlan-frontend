@@ -2,7 +2,7 @@
   <div>
     <v-container>
       <v-row>
-        <v-col cols="12" lg="5">
+        <v-col v-scrollanimation cols="12" lg="5">
           <h1>Contactanos</h1>
           <Form />
         </v-col>
@@ -59,5 +59,30 @@ h1 {
 #vidriera-map {
   margin-top: 20px;
   width: 100%;
+}
+.before-enter {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.enter {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row v-scrollanimation>
       <v-col cols="12" lg="7">
         <h1>Mision</h1>
         <p>
@@ -27,7 +27,7 @@
       </v-col>
     </v-row>
 
-    <v-row>
+    <v-row v-scrollanimation>
       <v-col cols="12" sm="6" lg="3" v-for="value of values" :key="value.id">
         <v-row>
           <v-col cols="2">
@@ -53,6 +53,31 @@ p {
 }
 v-icon {
   color: green;
+}
+.before-enter {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.enter {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 </style>
 <script>

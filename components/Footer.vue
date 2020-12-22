@@ -67,6 +67,11 @@ li a {
   /* color: rgb(32, 71, 122); */
   color: white;
 }
+li a:hover {
+  /* text-decoration: none; */
+  color: white;
+  border-bottom: 1px solid white;
+}
 .footer {
   background-color: #2c3e50;
 }
