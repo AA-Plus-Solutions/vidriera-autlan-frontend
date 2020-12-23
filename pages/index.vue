@@ -74,7 +74,7 @@
 </template>
 
 <script>
-import panImg from "~/assets/pan1.jpg";
+import panImg from "~/static/pan1.jpg";
 import Carousel from "../components/Carousel";
 export default {
   components: {
