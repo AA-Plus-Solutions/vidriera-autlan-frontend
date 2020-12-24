@@ -3,7 +3,11 @@
     <Carousel />
 
     <Welcome />
-    <section id="conocenos" :style="imageStyle">
+    <component is="style">
+      .magic{ background: url({{ image }}) center center/cover no-repeat fixed
+      transparent; }
+    </component>
+    <section id="conocenos" class="magic">
       <div class="overlay"></div>
 
       <v-container v-scrollanimation>
@@ -58,6 +62,13 @@ export default {
   components: {
     Carousel,
     Welcome,
+  },
+  computed: {
+    getImageStyle() {
+      return {
+        background: `url(${panImg}) center center/cover no-repeat fixed transparent;`,
+      };
+    },
   },
   data: () => {
     return {

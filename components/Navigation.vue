@@ -18,7 +18,7 @@
           <a href="javascript:void(0)" class="closebtn" v-on:click="closeNav()"
             >&times;</a
           >
-          <NuxtLink to="/">Inicio</NuxtLink>
+          <NuxtLink to="/" keep-alive>Inicio</NuxtLink>
           <NuxtLink to="/about-us">Nosotros</NuxtLink>
           <NuxtLink to="/catalog">Catalogo</NuxtLink>
           <NuxtLink to="/contact">Contacto</NuxtLink>
