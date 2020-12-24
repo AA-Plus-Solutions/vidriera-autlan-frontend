@@ -11,7 +11,7 @@
       >
         <v-overlay absolute>
           <v-row
-            class="fill-height justify-center animated fadeInUp"
+            class="ma-0 fill-height justify-center animated fadeInUp"
             align="center"
             justify="center"
           >
@@ -69,6 +69,18 @@ export default {
 </script>
 
 <style>
+@media (max-width: 576px) {
+  #welcome-carousel {
+    /* background-color: red; */
+  }
+  .v-application .display-3 {
+    font-size: 1.75rem !important;
+    line-height: 1.75rem !important;
+  }
+  .v-overlay__content {
+    width: 80% !important;
+  }
+}
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -165,5 +177,8 @@ export default {
 .v-btn.custom-btn:hover span.arrow::after {
   -webkit-animation: animateNext 1s 1;
   animation: animateNext 1s 1;
+}
+.v-overlay__content {
+  width: 90%;
 }
 </style>

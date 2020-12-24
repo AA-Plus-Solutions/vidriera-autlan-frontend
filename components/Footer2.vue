@@ -1,9 +1,11 @@
 <template>
   <div class="footer">
     <v-container>
-      <v-row>
+      <v-row class="ma-0">
         <v-col>
-          <p>Vidriera Autlan |<b>AA+ Solutions</b></p>
+          <p>
+            Vidriera Autlan <span id="separator">|</span><b>AA+ Solutions</b>
+          </p>
           <!-- <h1>hello</h1> -->
         </v-col>
 
@@ -45,5 +47,18 @@ b {
 a {
   text-decoration: none;
   margin-left: 10px;
+}
+@media (max-width: 576px) {
+  #separator {
+    display: none;
+  }
+  b {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+  }
+  .v-application p {
+    margin-bottom: 0;
+  }
 }
 </style>

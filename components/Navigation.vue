@@ -13,11 +13,11 @@
           <nav class="d-flex justify-end">
             <ul>
               <li>
-                <nuxt-link to="/">Inicio</nuxt-link>
+                <NuxtLink to="/">Inicio</NuxtLink>
               </li>
 
               <li>
-                <nuxt-link to="/about-us">Nosotros</nuxt-link>
+                <NuxtLink to="/about-us">Nosotros</NuxtLink>
               </li>
               <li>
                 <nuxt-link to="/catalog">Catalogo</nuxt-link>

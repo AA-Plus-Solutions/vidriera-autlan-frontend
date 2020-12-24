@@ -1,8 +1,8 @@
 <template>
   <div class="footer">
     <v-container>
-      <v-row>
-        <v-col cols="6">
+      <v-row class="ma-0">
+        <v-col cols="7" lg="6">
           <p class="title">Datos de contacto</p>
 
           <p>
@@ -11,7 +11,7 @@
           </p>
           <p><v-icon color="white">mdi-phone</v-icon> 686 561-6416</p>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="5" lg="6">
           <h1>Mapa del sitio</h1>
           <ul>
             <li v-for="url of urls" :key="url.id">
@@ -77,5 +77,18 @@ li a:hover {
 }
 .footer {
   color: white;
+}
+@media (max-width: 576px) {
+  p.title {
+    width: 100%;
+    font-size: 1rem !important;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem !important;
+  }
 }
 </style>
