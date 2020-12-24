@@ -12,7 +12,11 @@
         v-for="item of catalogue"
         :key="item.id"
       >
-        <nuxt-image :src="item.img" />
+        <nuxt-image
+          :src="item.img"
+          :lazy="true"
+          placeholder="https://via.placeholder.com/150/6A6C6E/?Text="
+        />
         <p>{{ item.description }}</p>
       </v-col>
     </v-row>
@@ -46,7 +50,7 @@ export default {
         },
         {
           id: 4,
-          img: "/vidriera_autlan_foto.jpg",
+          img: "/puerta_vidrio_templado.jpg",
           description: "Puertas de bano con vidrio templado",
         },
       ],
