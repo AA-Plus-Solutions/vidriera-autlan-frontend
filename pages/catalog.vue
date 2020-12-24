@@ -1,8 +1,8 @@
 
 
 <template>
-  <v-container>
-    <h1>catalogo</h1>
+  <v-container class="text-center">
+    <h1 class="mb-5">Catalogo</h1>
     <v-row>
       <v-col
         cols="12"
@@ -30,23 +30,41 @@ export default {
       catalogue: [
         {
           id: 0,
-          img: "/vidriera_autlan_foto.jpg",
-          description: "Ventanas de aluminio",
+          img: "/barandal_vidrio_templado.jpg",
+          description: "Barandal en vidrio templado",
+        },
+
+        {
+          id: 98,
+          img: "/puerta_vidrio_doble.jpg",
+          description: "Ventanas y puerta en vidrio doble y aluminio negro",
         },
         {
-          id: 1,
-          img: "/vidriera_autlan_foto.jpg",
-          description: "Puertas de aluminio",
+          id: 99,
+          img: "/persianas_duo_line.jpg",
+          description:
+            "Ventanas y puerta en vidrio doble y aluminio blanco **Persianas DUO-LINE",
+        },
+        {
+          id: 100,
+          img: "/espejo_closet.jpg",
+          description: "Puertas de espejo para closet con marco de aluminio",
+        },
+        {
+          id: 101,
+          img: "/puertas_abatibles.jpg",
+          description: "Puertas abatibles en aluminio negro y vidrio doble",
         },
         {
           id: 2,
-          img: "/vidriera_autlan_foto.jpg",
-          description: "Vidrio para ventanas",
+          img: "/canceleria_locales.jpg",
+          description:
+            "Canceleria y vidrio con filmina de seguridad , puertas doble abatimiento con vidrio templado.",
         },
         {
           id: 3,
-          img: "/vidriera_autlan_foto.jpg",
-          description: "Vidrio para puertas",
+          img: "/persianas_casa.jpg",
+          description: "Persianas Casa",
         },
         {
           id: 4,

@@ -12,7 +12,7 @@
           <p><v-icon color="white">mdi-phone</v-icon> 686 561-6416</p>
         </v-col>
         <v-col cols="5" lg="6">
-          <h1>Mapa del sitio</h1>
+          <p class="title no-border">Mapa del sitio</p>
           <ul>
             <li v-for="url of urls" :key="url.id">
               <nuxt-link :to="url.path">{{ url.name }}</nuxt-link>
@@ -57,10 +57,16 @@ p.title {
   border-bottom: 2px solid white;
   width: 30%;
 }
+/* p.no-border {
+  border-bottom: 2px solid transparent;
+} */
 
 ul {
   list-style: none;
   padding-left: 0 !important;
+}
+li {
+  margin-bottom: 10px;
 }
 li a {
   text-decoration: none;
