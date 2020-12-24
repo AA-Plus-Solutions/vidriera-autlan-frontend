@@ -63,4 +63,10 @@ p {
   text-align: center;
   margin-top: 10px;
 }
+
+@media (max-width: 576px) {
+  .container {
+    text-align: center;
+  }
+}
 </style>

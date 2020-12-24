@@ -27,7 +27,7 @@
       </v-col>
     </v-row>
 
-    <v-row v-scrollanimation>
+    <v-row id="values-container" v-scrollanimation>
       <v-col cols="12" sm="6" lg="3" v-for="value of values" :key="value.id">
         <v-row>
           <v-col cols="2">
@@ -78,6 +78,15 @@ v-icon {
 .enter {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+}
+
+@media (max-width: 576px) {
+  .container {
+    text-align: center;
+  }
+  #values-container {
+    text-align: left;
+  }
 }
 </style>
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <v-form v-model="valid">
+  <v-form v-model="valid" class="justify-center">
     <v-row>
       <!-- :rules="nameRules" -->
       <v-text-field
@@ -27,7 +27,7 @@
 
       <v-textarea v-model="message" outlined label="Mensaje"></v-textarea>
     </v-row>
-    <v-row>
+    <v-row class="justify-center">
       <!-- @click="validate"   -->
       <!-- v-on:click="validate" -->
       <!-- :disabled="!valid" -->
@@ -165,5 +165,11 @@ export default {
 .v-btn.custom-btn:hover span.arrow::after {
   -webkit-animation: animateNext 1s 1;
   animation: animateNext 1s 1;
+}
+
+@media (max-width: 576px) {
+  .row {
+    margin: 0;
+  }
 }
 </style>

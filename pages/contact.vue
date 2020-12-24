@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container>
-      <v-row>
+      <v-row class="ma-0">
         <v-col v-scrollanimation cols="12" lg="5">
           <h1>Contactanos</h1>
           <Form />
@@ -56,10 +56,12 @@ export default {
 h1 {
   margin-bottom: 30px;
 }
+
 #vidriera-map {
   margin-top: 20px;
   width: 100%;
 }
+
 .before-enter {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
