@@ -6,7 +6,7 @@
       <!-- <img class="logo-img" src="/logo_vidriera_autlan.jpg" /> -->
       <div class="d-flex justify-space-between">
         <div class="logo-container">
-          <nuxt-link tag="img" src="/logo_vidriera_autlan.jpg" to="/">
+          <nuxt-link tag="img" src="/logo_vidriera_autlan2.jpeg" to="/">
           </nuxt-link>
         </div>
 
@@ -54,6 +54,7 @@
 <style scoped>
 .logo-container {
   width: 20%;
+  cursor: pointer;
 }
 .additional-routes {
   width: 50%;
@@ -160,6 +161,9 @@ header .container {
   .v-application .additional-routes {
     display: none !important;
   }
+  .logo-container {
+    width: 40%;
+  }
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -179,7 +183,7 @@ export default {
     },
     closeNav: () => {
       document.getElementById("mySidenav").style.width = "0";
-    },
-  },
+    }
+  }
 };
 </script>
